@@ -1,0 +1,922 @@
+/*  GLOBALES */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+      
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    background: #233D58;
+    position: relative;
+     
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    
+}
+#login {
+	padding: 10rem;
+    width: 60%;
+    min-width: 50rem;
+}
+
+#boton-login{
+    text-align: center;
+    width: 10rem;
+    margin: 5.5%;
+    height: 5rem;
+}
+
+
+header h1{
+   display: none;
+}
+
+.nav-link{
+   
+    padding: 1.5%;
+}
+
+#img_carousel{
+    width: 100%;
+    height: 28rem;
+}
+#img_carousel2{
+    width: 100%;
+    height: 28rem;
+}
+#img_carousel3{
+    width: 100%;
+    height: 28rem;
+}
+label{
+    color: white;
+}
+
+legend{
+    color: white;
+}
+
+#contact_box{
+    width: 90%;
+    height: 75rem;
+    top: 1.6rem;
+}
+
+#boton_enviar{
+   
+    width: 100%;
+    font-size: 1.5rem ;
+    padding: 3%;
+
+}
+
+#contact_form{
+    position: absolute;
+    left: 0rem;
+    background: white;
+    width: 98%;
+    height: 70%;
+    margin: 0.5%;
+    margin-left: 1%;
+    max-height: 85rem;
+    
+}
+#titulo_consulta{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#tipo_consulta{
+    margin: 1%;
+    margin-bottom: 1rem;
+}
+
+#contact_form input,
+#contact_form select,
+#contact_form textarea{
+    border: none;
+    border-bottom: 0.2rem solid gray;
+    margin: 2.5%;
+    width: 90%;
+    height: 40%;
+    padding-bottom: 0.3rem;
+    margin-bottom:  2rem;
+    font-weight: bold;
+}
+
+#cuadrado{
+    width: 95%;
+}
+
+#calendario-google{
+    float:right; margin-top:3%; margin-right:3%; 
+}
+
+#contact_form #button{
+    display: inline-block;
+    background: #F8931F;
+    color: white;
+    border: none;
+    padding: 0.8rem 0rem;
+    border-radius: 0.5rem;
+    margin-left: 6%;
+    margin-bottom: 2rem;
+    width: 40%;
+    text-align: center;
+}
+
+#contact_form #button:hover{
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+#contact_img{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#contact_form{
+min-width:30rem; 
+max-width:70rem;
+}
+
+
+#legend-form{ 
+    width:30%; 
+    text-align:center; 
+    border:solid;
+}
+
+
+#section_login {
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+#modal_login {
+	background-color: #434e5a;
+	opacity: 0.93;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+#user-img img {
+	height: 120px;
+    width: 120px;
+    
+}
+#user-img {
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+#form_login {
+	margin-bottom: 25px;
+}
+#form_login input {
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 54px;
+}
+
+
+
+.icon_img{
+
+	position: absolute;
+	font-size: 22px;
+    left: 8%;
+    margin-top: 2%;
+	padding-top: 2%;
+	color: #555e60;
+}
+
+#form_login2 {
+	margin-bottom: 25px;
+}
+#form_login2 input {
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 54px;
+}
+
+
+#imput_login button {
+	width: 40%;
+	margin: 5px 0 25px;
+}
+#btn-success {
+	background-color: #1c6288;
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+	border: 1px solid #daf1ff;
+}
+#btn-success:hover {
+	background-color: #13445e;
+	border: 1px solid #daf1ff;
+}
+#forgot {
+	padding: 5px 0 25px;
+}
+#forgot a {
+	color: #daf1ff;
+}
+
+#caja{
+    height: 100%;
+    min-width: 30rem;
+    min-height: 30rem;
+}
+
+.cuadrado-docente{
+    width: 96%;
+    margin-left: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contactomapa{
+    float: right ;
+    margin: 2.5%;
+    width: 40%;
+    height: 100%;
+    top: 0;
+}
+
+#contenedotmapa{
+    width: 1000px;
+    height: 1000px;
+}
+
+#google{
+    display: none;
+}
+
+#contenedorhistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fondos/753999.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#historia{
+    display: inline-block;
+    margin: 3%;
+    padding: 2%;
+    width: 55%;
+    background: #C8C8C8;
+}
+
+#imagen-piano{
+    float: right;
+    width: 35%;
+    margin-top: 3%;
+}
+
+
+#historia h2,h3{
+    width: 95%;
+}
+
+#historia ul li{
+    width: 95%;
+}
+
+#historia p{
+    width: 95%;
+}
+
+#imagenhistoria{
+    display: none;
+    float: right ;
+    margin: 5%;
+    width: 20%;
+    height: 100%;
+    top: 0;
+
+}
+
+#imagenhistoria img{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#h2eventos{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+#eventos{
+    padding: 1%;
+}
+
+#eventos div div{
+    background-color: grey;
+    margin: 0.3rem;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+    margin-top: 0.3%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+@media screen and (min-width: 48rem){
+    body{
+        background: #233D58;
+    }
+    #icono_ocultar{
+        display: none;
+    }
+    #boton_enviar{
+   
+        width: 350%;
+        font-size: 1.5rem ;
+        padding: 3%;
+    
+    }
+    #img_carousel{
+        width: 100%;
+        height: 50rem;
+    }
+    #img_carousel2{
+        width: 100%;
+        height: 50rem;
+    }
+    #img_carousel3{
+        width: 100%;
+        height: 50rem;
+    }
+    #contact_box{
+        width: 80%;
+        height: 75rem;
+        top: 1.6rem;
+    }
+
+    #contact_img{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    #contact_form{
+        position: absolute;
+        left: 0rem;
+        background: white;
+        width: 50%;
+        height: 70%;
+        margin: 0.5%;
+        margin-left: 1%;
+        max-height: 85rem;
+        
+    }
+    #google{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 60rem){
+    body{
+        background: #233D58;
+    }
+    #icono_ocultar{
+        display: none;
+    }
+    #boton_enviar{
+   
+        width: 330%;
+        font-size: 1.5rem ;
+        padding: 3%;
+    
+    }
+    #img_carousel{
+        width: 100%;
+        height: 60rem;
+    }
+    #img_carousel2{
+        width: 100%;
+        height: 60rem;
+    }
+    #img_carousel3{
+        width: 100%;
+        height: 60rem;
+    }
+    #contenedorhistoria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #historia{
+        display: inline-block;
+        margin: 3%;
+        padding: 2%;
+        width: 50%;
+        background: #C8C8C8;
+    }
+
+    #imagen-piano{
+        float: right;
+        width: 35%;
+        margin-top: 3%;
+    }
+
+    #historia h2,h3{
+        width: 95%;
+    }
+
+    #historia ul li{
+        width: 95%;
+    }
+
+    #historia p{
+        width: 95%;
+    }
+
+    #imagenhistoria{
+        display: flex;
+        float: right;
+        margin: 5%;
+        width: 20%;
+        height: 100%;
+   
+    }
+
+    #imagenhistoria img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact_box{
+        width: 80%;
+        height: 75rem;
+        top: 1.6rem;
+    }
+    #contact_img{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    #contact_form{
+        position: absolute;
+        left: 0rem;
+        background: white;
+        width: 50%;
+        height: 70%;
+        margin: 0.5%;
+        margin-left: 1%;
+        max-height: 85rem;
+        
+    }
+    #contactomapa{
+        float: right ;
+        margin: 2.5%;
+        width: 45.8%;
+        height: 100%;
+        top: 0;
+    }
+
+    #google{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 76.7rem){
+    body{
+        background: #233D58;
+    }
+    #icono_ocultar{
+        display: none;
+    }
+    #boton_enviar{
+   
+        width: 100%;
+        font-size: 1.5rem ;
+        padding: 3%;
+    
+    }
+    #img_carousel{
+        width: 100%;
+        height: 80rem;
+    }
+    #img_carousel2{
+        width: 100%;
+        height: 80rem;
+    }
+    #img_carousel3{
+        width: 100%;
+        height: 80rem;
+    }
+    #contenedorhistoria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #historia{
+        display: inline-block;
+        margin: 3%;
+        padding: 2%;
+        width: 55%;
+        background: #C8C8C8;
+    }
+
+    #imagen-piano{
+        float: right;
+        width: 35%;
+        margin-top: 3%;
+    }
+
+
+    #historia h2,h3{
+        width: 95%;
+    }
+
+    #historia ul li{
+        width: 95%;
+    }
+
+    #historia p{
+        width: 95%;
+    }
+
+    #imagenhistoria{
+        float: right ;
+        margin: 5%;
+        width: 20%;
+        height: 100%;
+        top: 0;
+
+    }
+
+    #imagenhistoria img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact_box{
+        width: 80%;
+        height: 75rem;
+        top: 1.6rem;
+    }
+
+    #contact_img{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    #contact_form{
+        position: absolute;
+        left: 0rem;
+        background: white;
+        width: 50%;
+        height: 70%;
+        margin: 0.5%;
+        margin-left: 1%;
+        max-height: 85rem;
+        
+    }
+    #contactomapa{
+        float: right ;
+        margin: 2.5%;
+        width: 45.8%;
+        height: 100%;
+        top: 0;
+    }
+    #escuela{
+        display: none;
+    }
+
+    #google{
+        display: inline-flex;
+    }
+
+}
+
+@media screen and (min-width: 95rem){
+    body{
+        background: #233D58;
+    }
+    #icono_ocultar{
+        display: none;
+    }
+    #boton_enviar{
+   
+        width: 100%;
+        font-size: 1.5rem ;
+        padding: 3%;
+    
+    }
+    #img_carousel{
+        width: 100%;
+        height: 87rem;
+    }
+    #img_carousel2{
+        width: 100%;
+        height: 87rem;
+    }
+    #img_carousel3{
+        width: 100%;
+        height: 87rem;
+    }
+    #contenedorhistoria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #historia{
+        display: inline-block;
+        margin: 3%;
+        padding: 2%;
+        width: 55%;
+        background: #C8C8C8;
+    }
+    #imagen-piano{
+        float: right;
+        width: 35%;
+        margin-top: 3%;
+    }
+
+    #historia h2,h3{
+        width: 95%;
+    }
+
+    #historia ul li{
+        width: 95%;
+    }
+
+    #historia p{
+        width: 95%;
+    }
+
+    #imagenhistoria{
+        float: right ;
+        margin: 5%;
+        width: 20%;
+        height: 100%;
+        top: 0;
+
+    }
+
+    #imagenhistoria img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact_box{
+        width: 75%;
+        height: 75rem;
+        top: 1.6rem;
+    }
+
+    #contact_img{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    #contact_form{
+        position: absolute;
+        left: 0rem;
+        background: white;
+        width: 50%;
+        height: 70%;
+        margin: 0.5%;
+        margin-left: 1%;
+        max-height: 85rem;
+        
+    }
+    #contactomapa{
+        float: right ;
+        margin: 2.5%;
+        width: 40%;
+        height: 100%;
+        top: 0;
+    }
+
+    #google{
+        display: inline-flex;
+    }
+
+    #escuela{
+        display: none;
+    }
+}
+
